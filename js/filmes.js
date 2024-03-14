@@ -2,10 +2,44 @@
 
 export  async function getFilme () {
 
-    const url = 'http://10.107.134.63:8080/v2/acmeFilmes/filmes';
+    const url = 'http://localhost:8080/v2/AcmeFilmes/listarFilmes';
     const response = await fetch(url)
     const data = await response.json()
 
     return data.filmes
 
+}
+
+export async function postFilme(filme) {
+
+const url = 'http://localhost:8080/v2/acmeFilmes/filme';
+const options = {
+    method: 'POST',
+    headers: {
+        'Content-type': 'application/json'
+    },
+
+    body: JSON.stringify(filme)
+}
+
+const response = await fetch(url,options)
+return response.ok
+
+}
+
+
+const filme = {
+
+}
+
+
+export async function deleteFilme(id) {
+
+    const url = ""
+    const options = {
+        method: 'DELETE'
+    }
+
+    const response = await fetch(url,options)
+    return response.ok
 }
