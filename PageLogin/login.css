@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: 'lexend';
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+}
+
+main .titles{
+    margin-top: 50px;
+    font-size: 25PX;
+}
+main .titles p{
+    font-size: 15px;
+    position: relative;
+    left: 55px;
+}
+main .titles{
+    position: relative;
+    left: 40px;
+}
+
+.entradas{
+    margin-top: 100px;
+}
+
+.entradas .email{
+    margin-bottom: 40px;
+}
+
+.entradas input{
+    position: relative;
+    height: 44px;
+    width: 500px;
+    border-radius: 5px;
+}
+
+.botao{
+    margin-top: 50px;
+    position: relative;
+    left: 15svh;
+}
+
+.botao 
+
+button{
+    background-color: brown;
+    border-radius: 5px;
+    height: 30px;
+    width: 150px;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+button p{
+    position: relative;
+    right: 40px;
+}
+
+footer{
+    position: relative;
+    top: 20svh;
+    cursor: pointer;
+}
