@@ -1,8 +1,10 @@
 'use strict'
 
+//importanto as infos
+
 export  async function getFilme () {
 
-    const url = 'http://localhost:8080/v2/AcmeFilmes/listarFilmes';
+    const url = 'https://filmesback-end.onrender.com/v2/AcmeFilmes/listarFilmes';
     const response = await fetch(url)
     const data = await response.json()
 
